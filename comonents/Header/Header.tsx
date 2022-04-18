@@ -8,11 +8,12 @@ import rengoku from "../../public/slide_pictures/Rengoku.jpeg";
 
 import styles from "../../styles/Header.module.scss";
 import Center_Container from "../Center_Container/Center_Container";
+import NavMenu from "../NavMenu/NavMenu";
 
 const Header = ({ children }: { children?: ReactNode }) => {
   return (
     <header className={styles.header}>
-      {children}
+      <NavMenu></NavMenu>
       <Center_Container>
         <Image
           alt="image"
